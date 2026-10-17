@@ -13,6 +13,7 @@ jobs:
           echo line3
   publish:
     runs-on: ubuntu-22.04
+    needs: build
     steps:
       - name: Print to console
         run: echo Hello GH Actions 
