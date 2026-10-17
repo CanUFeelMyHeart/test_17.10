@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Print to console
         run: echo Hello GH Actions 
@@ -15,7 +15,7 @@ jobs:
           echo line2
           echo line3
   publish:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-slim
     needs: build
     steps:
       - name: Print to console
